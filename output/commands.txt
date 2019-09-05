@@ -1,0 +1,12 @@
+python main.py --complex ../../raw_data/data-simplification/turk/V0V4_V1V4_V2V4_V3V4_V0V3_V0V2_V1V3.aner.ori.valid.src --simple hedge_trimmer_newsela_out.txt
+
+/usr/bin/python3 metrics/metrics.py -c raw_data/data-simplification/newsela/V0V4_V1V4_V2V4_V3V4_V0V3_V0V2_V1V3.aner.ori.valid.src  -r raw_data/data-simplification/newsela/valid_ref  -s baselines/hedge_trimmer/encdeca_newsela.txt
+
+/usr/bin/python3 metrics/metrics.py -c raw_data/data-simplification/newsela/V0V4_V1V4_V2V4_V3V4_V0V3_V0V2_V1V3.aner.ori.valid.src  -r raw_data/data-simplification/newsela/valid_ref  -s baselines/hedge_trimmer/hedge_trimmer_newsela_out.txt
+
+=======================================================================================================================
+
+python main.py --complex ../../raw_data/data-simplification/turk/tune.8turkers.tok.truecase.norm --simple hedge_trimmer_turk_out.txt
+
+/usr/bin/python3 metrics/metrics.py -c raw_data/data-simplification/turk/tune.8turkers.tok.norm  -r raw_data/data-simplification/turk/valid_ref  -s baselines/hedge_trimmer/hedge_trimmer_turk_out.txt
+
