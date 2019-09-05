@@ -4,3 +4,6 @@ To run the code, use the following format:
 python main.py  --complex  \<input file with complex sentences\>  --simple  \<out file with simplified sentences\>
 
 Please make sure you run the Stanford CoreNLP server on the port 9000, before you run the script. This is needed extract the constituency parse of the sentence.
+
+
+Currently, there is not final word threshold for deletion. In other words, the deletion is aggresive. To change this setting, feel free to increase the THRESHOLD in main.py file.
